@@ -5,7 +5,7 @@ int main(){
     int hora1,hora2,minuto1,minuto2;
     scanf("%d %d %d %d",&hora1,&minuto1,&hora2,&minuto2);
     if(hora2>=hora1){
-        if(hora2==hora1)
+        if(hora2==hora1 && (minuto2==minuto1 || minuto2<minuto1))
             hora2 = 24;
         else
             hora2 -= hora1;
